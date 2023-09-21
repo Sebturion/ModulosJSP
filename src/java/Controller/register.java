@@ -62,7 +62,7 @@ public class register extends HttpServlet {
 
         while (rs.next()) {
             String productId = rs.getString("Product_ID");
-            String productName = rs.getString("Product_Name");
+            String productName = rs.getString("ProductName");
             String description = rs.getString("Description");
 
             Product product = new Product(productId, productName, description);
